@@ -1250,8 +1250,14 @@ video {
   }
 }
 
-@media min-aspect-ratio : 3/2 {
+@media (min-aspect-ratio : 3/2) {
   .widescreen\:section-min-height{
+    min-height: calc(100vh - 68px)
+  }
+}
+
+@media (max-aspect-ratio : 13/20) {
+  .tallscreen\:section-min-height{
     min-height: calc(100vh - 68px)
   }
 }
